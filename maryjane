@@ -195,8 +195,8 @@ function Library:Window(Properties)
         KeybindList = nil
     }
     
-    Library.ScreenSize = CoreGui.RobloxGuiScreen.AbsoluteSize
-    
+Library.ScreenSize = workspace.CurrentCamera.ViewportSize
+
     -- ScreenGui
     Library.ScreenGui = Create("ScreenGui", {
         Name = Properties.Name or "Library",
